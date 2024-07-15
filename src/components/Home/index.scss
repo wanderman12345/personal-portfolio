@@ -1,0 +1,116 @@
+.home-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transition: translateY(-50%);
+        width: 40%;
+
+    }
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &::before{
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+
+        }
+        &::after{
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6s;
+
+        }
+        img {
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            margin-right: 2px;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+
+        }
+    }
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
+    }
+
+    .profile-section img {
+        width: 400px; /* Adjust the size as needed */
+        height: 400px; /* Adjust the size as needed */
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 850px;
+        margin-top: 150px;
+        // transform: rotate(90deg);
+        transform: rotate(90deg); /* Correct rotation property */
+        -webkit-transform: rotate(90deg); /* Safari and Chrome */
+        -moz-transform: rotate(0deg); /* Firefox */
+        -ms-transform: rotate(90deg); /* Internet Explorer */
+        -o-transform: rotate(90deg); /* Opera */
+        border: 2px solid #000; /* Optional: add a border */
+        display: block; /* Ensure it behaves as a block element */
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a drop shadow */
+        animation: float 6s ease-in-out infinite; /* Add a subtle pulse animation */
+        background: linear-gradient(45deg, #ff6b6b, #ffd700); /* Add a gradient border */
+        padding: 5px; /* Add padding to show the gradient border */
+        background-clip: padding-box;
+
+      }
+
+      @keyframes float {
+        0% {
+            transform: translateY(0) rotate(90deg); /* Include rotation in the float animation */
+        }
+        50% {
+            transform: translateY(-20px) rotate(90deg); /* Float up */
+        }
+        100% {
+            transform: translateY(0) rotate(90deg); /* Float back to original position */
+        }
+    }
+
+}
