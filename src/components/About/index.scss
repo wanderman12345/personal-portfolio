@@ -4,18 +4,65 @@
     height: 100%;
     top: 0;
     padding-top: 18%;
-    margin-left: 0;
-    margin-top: 100px;
     position: absolute;
     right: 0;
     overflow: hidden;
 
 }
+.WorkExperience{
+  left: 4%;
+  padding: 10px;
+  position: relative;
+  width: 90%;
+  top: 210%;
+  text-align: center;
+
+    .text-animate{
+        font-size: 42px;
+        font-style: "Roboto";
+    }
+    .text-animate-hover{
+        font-size: 42px;
+        font-style: "Roboto";
+        color: #ffd700;
+    }
+
+    .experience-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .experience-item {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .experience-item img {
+        max-width: 100%;
+        height: auto;
+      }
+
+}
+
+
 .Timeline{
-    left: 300px;
+    left: 25%;
+    margin-left: 3%;
+    padding: 10px;
     position: absolute;
     top: 550px;
     text-align: center;
+
+    .text-animate{
+        font-size: 42px;
+        font-style: "Roboto";
+    }
+    .text-animate-hover{
+        font-size: 42px;
+        font-style: "Roboto";
+    }
 
     .vertical-timeline-element--work {
         // color: #fff;
@@ -28,13 +75,36 @@
     .vertical-timeline-element-content.bounce-in{
         background-color: transparent;
         border-color: transparent;
+        width: 90%;
+        // font-size: 22px;
+
+        p{
+            font-size: 15px;
+            }
+
+        // padding-left: 10;
+
+
+
     }
+    .vertical-timeline-element-content.bounce-in:first-of-type {
+        margin-right: -45%; /* Adjust this value to move the first element to the left */
+    }
+
+    .vertical-timeline-element-content.bounce-in:last-of-type {
+        margin-left: -50%; /* Adjust this value to move the second element to the right */
+    }
+
 
     .vertical-timeline-element-title{
         color: #ffd700;
-        font-size: 24px;
+        font-size: 36px;
     }
-
+    .vertical-timeline-element-subtitle{
+        margin-top: 10px;
+        font-size: 20px;
+        color: white;
+    }
 
 }
 

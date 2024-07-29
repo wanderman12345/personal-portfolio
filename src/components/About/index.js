@@ -12,6 +12,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work'
 import UCSDIcon from '../../../src/assets/images/UCSD.png'
 import UCSCIcon from '../../../src/assets/images/ucsc.png'
+import BasicCard from '../Card';
+import Nutanix from '../../../src/assets/images/Nutanix.png'
+import PDFViewer from '../PDFViewer';
 
 
 
@@ -70,8 +73,8 @@ const About = () => {
             <div className='Timeline'>
                     <h2><AnimatedLetters
                         letterClass={letterClass}
-                        strArray = {['T', 'i', 'm', 'e', 'l', 'i', 'n', 'e']}
-                        idx = {23}
+                        strArray = {['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']}
+                        idx = {19}
                      /></h2>
                     <p> My academic journey </p>
                     <VerticalTimeline>
@@ -83,7 +86,7 @@ const About = () => {
                             iconClassName="timeline-element-icon"
                             icon={<img src={UCSDIcon} alt="UCSD Icon" style={{ width: '100%', height: '100%' }} />}
                         >
-                            <h3 className="vertical-timeline-element-title">Graduate Student</h3>
+                            <h3 className="vertical-timeline-element-title">UC San Diego </h3>
                             <h4 className="vertical-timeline-element-subtitle">San Diego, CA</h4>
                             <p>
                             Pursuing my masters in Computer Engineering with the CSE Department.
@@ -97,16 +100,23 @@ const About = () => {
                             iconClassName="timeline-element-icon"
                             icon={<img src={UCSCIcon} alt="UCSD Icon" style={{ width: '111%', height: '110%', marginLeft: '-3px', marginTop: '-4px' }} />}
                         >
-                            <h3 className="vertical-timeline-element-title">Undergraduate Student</h3>
+                            <h3 className="vertical-timeline-element-title">UC Santa Cruz</h3>
                             <h4 className="vertical-timeline-element-subtitle">Santa Cruz, CA</h4>
                             <p>
                             Completed my bachelors of science with highest honors in Copmuter Engineering.
                             </p>
                         </VerticalTimelineElement>
                     </VerticalTimeline>
-                    <p>This is a new section added below the spinning cube.</p>
                 </div>
-
+                <div className = "WorkExperience">
+                <h2><AnimatedLetters
+                        letterClass={letterClass}
+                        strArray = {['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']}
+                        idx = {18}
+                /></h2>
+                </div>
+                {/* <PDFViewer file="/path/to/your/resume.pdf" /> */}
+                {/* <BasicCard/> */}
         </div>
         <Loader type = "line-scale"/>
         </>
