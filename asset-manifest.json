@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.175ab8ca.css",
-    "main.js": "/react-portfolio/static/js/main.29c92a07.js",
-    "static/js/453.9415623e.chunk.js": "/react-portfolio/static/js/453.9415623e.chunk.js",
-    "static/media/Mathew.png": "/react-portfolio/static/media/Mathew.a19c3a79330cf01bf80f.png",
-    "static/media/UCSD.png": "/react-portfolio/static/media/UCSD.fc05de4bf393c3a6a143.png",
-    "static/media/ucsc.png": "/react-portfolio/static/media/ucsc.3379215eec7936125e5a.png",
-    "static/media/Mathew.pdf": "/react-portfolio/static/media/Mathew.15326090dd2831c79f98.pdf",
-    "static/media/Nutanix.png": "/react-portfolio/static/media/Nutanix.f6c3a6ca843d964dd76a.png",
-    "static/media/helvetica-neu.ttf": "/react-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/logo_sub.png": "/react-portfolio/static/media/logo_sub.19f3ab25ab15fd848b30.png",
-    "static/media/LaBelleAurore.woff2": "/react-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/logo-s.png": "/react-portfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
-    "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/react-portfolio/index.html",
-    "main.175ab8ca.css.map": "/react-portfolio/static/css/main.175ab8ca.css.map",
-    "main.29c92a07.js.map": "/react-portfolio/static/js/main.29c92a07.js.map",
-    "453.9415623e.chunk.js.map": "/react-portfolio/static/js/453.9415623e.chunk.js.map"
+    "main.css": "/personal-portfolio/static/css/main.4ee421f7.css",
+    "main.js": "/personal-portfolio/static/js/main.700a3f4d.js",
+    "static/js/453.9415623e.chunk.js": "/personal-portfolio/static/js/453.9415623e.chunk.js",
+    "static/media/Mathew.png": "/personal-portfolio/static/media/Mathew.a19c3a79330cf01bf80f.png",
+    "static/media/UCSD.png": "/personal-portfolio/static/media/UCSD.fc05de4bf393c3a6a143.png",
+    "static/media/ucsc.png": "/personal-portfolio/static/media/ucsc.3379215eec7936125e5a.png",
+    "static/media/Mathew.pdf": "/personal-portfolio/static/media/Mathew.15326090dd2831c79f98.pdf",
+    "static/media/Nutanix.png": "/personal-portfolio/static/media/Nutanix.f6c3a6ca843d964dd76a.png",
+    "static/media/helvetica-neu.ttf": "/personal-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo_sub.png": "/personal-portfolio/static/media/logo_sub.19f3ab25ab15fd848b30.png",
+    "static/media/LaBelleAurore.woff2": "/personal-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/personal-portfolio/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/personal-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/personal-portfolio/index.html",
+    "main.4ee421f7.css.map": "/personal-portfolio/static/css/main.4ee421f7.css.map",
+    "main.700a3f4d.js.map": "/personal-portfolio/static/js/main.700a3f4d.js.map",
+    "453.9415623e.chunk.js.map": "/personal-portfolio/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.175ab8ca.css",
-    "static/js/main.29c92a07.js"
+    "static/css/main.4ee421f7.css",
+    "static/js/main.700a3f4d.js"
   ]
 }
