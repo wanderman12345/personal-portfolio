@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.175ab8ca.css",
-    "main.js": "/react-portfolio/static/js/main.ecfddd5a.js",
+    "main.js": "/react-portfolio/static/js/main.29c92a07.js",
     "static/js/453.9415623e.chunk.js": "/react-portfolio/static/js/453.9415623e.chunk.js",
     "static/media/Mathew.png": "/react-portfolio/static/media/Mathew.a19c3a79330cf01bf80f.png",
     "static/media/UCSD.png": "/react-portfolio/static/media/UCSD.fc05de4bf393c3a6a143.png",
@@ -15,11 +15,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/react-portfolio/index.html",
     "main.175ab8ca.css.map": "/react-portfolio/static/css/main.175ab8ca.css.map",
-    "main.ecfddd5a.js.map": "/react-portfolio/static/js/main.ecfddd5a.js.map",
+    "main.29c92a07.js.map": "/react-portfolio/static/js/main.29c92a07.js.map",
     "453.9415623e.chunk.js.map": "/react-portfolio/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.175ab8ca.css",
-    "static/js/main.ecfddd5a.js"
+    "static/js/main.29c92a07.js"
   ]
 }
