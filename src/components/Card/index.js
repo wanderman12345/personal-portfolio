@@ -21,7 +21,7 @@ export default function BasicCard() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formState, 'YOUR_USER_ID')
+    emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, formState, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         console.log(result.text);
       }, (error) => {

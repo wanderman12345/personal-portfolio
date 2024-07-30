@@ -7,6 +7,7 @@ import { faGitAlt, faJsSquare, faReact, faSass, faHtml5 } from '@fortawesome/fre
 import { faLinux } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders'
 import { faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import WorkIcon from '@mui/icons-material/Work'
@@ -15,7 +16,9 @@ import UCSCIcon from '../../../src/assets/images/ucsc.png'
 import BasicCard from '../Card';
 import Nutanix from '../../../src/assets/images/Nutanix.png'
 import PDFViewer from '../PDFViewer';
-
+import { Button } from '@mui/material';
+import { saveAs } from 'file-saver';
+import samplePdf from '../../../src/assets/images/Mathew.pdf'
 
 
 const About = () => {
@@ -25,6 +28,10 @@ const About = () => {
         const idTimeOut = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)}, [])
+
+    const downloadPdf = () => {
+        saveAs(samplePdf, 'Mathew_Raju_Resume.pdf');
+    };
 
     return (
         <>
@@ -37,17 +44,36 @@ const About = () => {
                         idx = {15}
                      />
                 </h1>
-                <p>
-                I'm a Computer Engineer with interests in Full-stack Development, ML/AI and Robotics! A wide range of topics because there's a lot to enjoy!
-                </p>
-                <p>
-                Currently I'm pursuing my masters in Computer Science at the University Of California San Diego, Go Tritons!
-                </p>
-                <p>
-                I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!.
-                </p>
+                <div className = "description">
+                    <p>
+                    I'm a Computer Engineer with interests in Full-stack Development, ML/AI and Robotics! A wide range of topics because there's a lot to enjoy!
+                    </p>
+                    <p>
+                    Currently I'm pursuing my masters in Computer Science at the University Of California San Diego, Go Tritons!
+                    </p>
+                    <p>
+                    I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!.
+                    </p>
+                </div>
+            <div className = "Resume">
+                <Button variant="contained"  sx ={{ marginTop: '15px',
+                padding: '8px 30px',
+                fontSize: '13px',
+                backgroundColor: '#022c43',
+                border: '2px solid #ffd700', // Adding border color
+                color: '#ffd700',
+                '&:hover': {
+                    background: '#ffd700',
+                    color: '#333'
+                }
+                }}
+                onClick={downloadPdf}>
+                Resume
+                <FontAwesomeIcon icon={faDownload} className="download-icon" style = {{zIndex: '1', fontSize: '10%', marginBottom: '2px', marginLeft: '12px', fontSize: '120%', color: '#ffd700',  }} />
+                </Button>
+          </div>
             </div>
-            <div className = 'stage-cube-cont'>
+            {/* <div className = 'stage-cube-cont'>
                 <div className  ='cubespinner'>
                     <div className = 'face1'>
                         <FontAwesomeIcon icon ={faLinux} color = '#00000' />
@@ -68,8 +94,7 @@ const About = () => {
                         <FontAwesomeIcon icon ={faGitAlt} color = '#EC4D28' />
                     </div>
                 </div>
-            </div>
-
+            </div> */}
             <div className='Timeline'>
                     <h2><AnimatedLetters
                         letterClass={letterClass}
@@ -108,13 +133,13 @@ const About = () => {
                         </VerticalTimelineElement>
                     </VerticalTimeline>
                 </div>
-                <div className = "WorkExperience">
+                {/* <div className = "WorkExperience">
                 <h2><AnimatedLetters
                         letterClass={letterClass}
                         strArray = {['E', 'x', 'p', 'e', 'r', 'i', 'e', 'n', 'c', 'e']}
                         idx = {18}
                 /></h2>
-                </div>
+                </div> */}
                 {/* <PDFViewer file="/path/to/your/resume.pdf" /> */}
                 {/* <BasicCard/> */}
         </div>
