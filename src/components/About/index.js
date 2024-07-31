@@ -52,7 +52,7 @@ const About = () => {
                     Currently I'm pursuing my masters in Computer Science at the University Of California San Diego, Go Tritons!
                     </p>
                     <p>
-                    I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!.
+                    I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!
                     </p>
                 </div>
             <div className = "Resume">

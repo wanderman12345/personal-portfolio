@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent, Typography, Button } from '@mui/joy';
 import BasicTextFields from '../TextFields';
 import emailjs from 'emailjs-com';
+import { useEffect } from 'react';
 
 export default function BasicCard() {
   const [formState, setFormState] = useState({
@@ -28,6 +29,16 @@ export default function BasicCard() {
         console.log(error.text);
       });
   };
+
+  // Cleanup logic to avoid state updates on unmounted component
+    useEffect(() => {
+      let isMounted = true; // flag to track if the component is mounted
+
+      return () => {
+        isMounted = false; // cleanup function to set flag to false
+      };
+    }, []);
+
 
   return (
     <Card sx={{
