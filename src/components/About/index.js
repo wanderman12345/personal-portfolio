@@ -52,7 +52,7 @@ const About = () => {
                     Currently I'm pursuing my masters in Computer Science at the University Of California San Diego, Go Tritons!
                     </p>
                     <p>
-                    I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!.
+                    I consider myself to be a focused, curious and outgoing person! In my freetime, I watch formula one and love a good workout!
                     </p>
                 </div>
             <div className = "Resume">
@@ -73,35 +73,13 @@ const About = () => {
                 </Button>
           </div>
             </div>
-            {/* <div className = 'stage-cube-cont'>
-                <div className  ='cubespinner'>
-                    <div className = 'face1'>
-                        <FontAwesomeIcon icon ={faLinux} color = '#00000' />
-                    </div>
-                    <div className = 'face2'>
-                        <FontAwesomeIcon icon ={faHtml5} color = '#F06529' />
-                    </div>
-                    <div className = 'face3'>
-                        <FontAwesomeIcon icon ={faSass} color = '#CC6699' />
-                    </div>
-                    <div className = 'face4'>
-                        <FontAwesomeIcon icon ={faReact} color = '#5ED4F4' />
-                    </div>
-                    <div className = 'face5'>
-                        <FontAwesomeIcon icon ={faJsSquare} color = '#EFd81D' />
-                    </div>
-                    <div className = 'face6'>
-                        <FontAwesomeIcon icon ={faGitAlt} color = '#EC4D28' />
-                    </div>
-                </div>
-            </div> */}
             <div className='Timeline'>
                     <h2><AnimatedLetters
                         letterClass={letterClass}
                         strArray = {['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']}
                         idx = {19}
                      /></h2>
-                    <p> My academic journey </p>
+                    <p className = "start"> My academic journey </p>
                     <VerticalTimeline>
                         <VerticalTimelineElement
                             className="vertical-timeline-element--work"

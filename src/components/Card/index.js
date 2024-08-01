@@ -1,13 +1,16 @@
+//
+
 import React, { useState } from 'react';
 import { Card, CardContent, Typography, Button } from '@mui/joy';
 import BasicTextFields from '../TextFields';
 import emailjs from 'emailjs-com';
+import './index.scss'; // Import the CSS file with responsive styles
 
 export default function BasicCard() {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
-    message: '', // Add message to the state
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -30,64 +33,44 @@ export default function BasicCard() {
   };
 
   return (
-    <Card sx={{
-      width: 900,
-      height: 650, // Adjust height to accommodate message field
-      marginLeft: "20%",
-      size: "21px",
-      marginTop: "6%",
-      textAlign: 'center',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      color: 'white',
-      backgroundColor: '#F5F5DC',
-      borderColor: '#4d4d4e'
-    }}>
+    <Card className="card">
       <CardContent>
-        <Typography variant="body1" sx={{
-          fontStyle: 'italic',
-          fontSize: '4rem',
-          color: '#333333',
-          marginBottom: '2rem',
-        }}>
+        <Typography variant="body1" className="card-title">
           To Mathew:
         </Typography>
-        <form onSubmit={handleSubmit}>
-        <div style={{ marginTop: '10%', marginLeft: "-150%" }}>
-          <BasicTextFields
-            name="name"
-            placeholder="Name"
-            value={formState.name}
-            onChange={handleChange}
-            width = '35ch'
-          />
-        </div>
-          <div style={{ marginTop: '-23%', marginLeft: "80%" }}>
+        <form onSubmit={handleSubmit} className="form-container">
+          <div className="input-container">
+            <BasicTextFields
+              name="name"
+              placeholder="Name"
+              value={formState.name}
+              onChange={handleChange}
+              width='100%'
+            />
+          </div>
+          <div className="input-container">
             <BasicTextFields
               name="email"
               placeholder="Email"
-              width = '35ch'
               value={formState.email}
               onChange={handleChange}
+              width='100%'
             />
           </div>
-          <div style={{ marginTop: '4rem', marginLeft: '-66%', width: '280px', }}>
-          <BasicTextFields
-            name="message"
-            placeholder="Message"
-            value={formState.message}
-            onChange={handleChange}
-            multiline
-            rows={10}
-            width='225%' // Adjust width as needed
-            height='12rem' // Adjust height as needed
+          <div className="input-container">
+            <BasicTextFields
+              name="message"
+              placeholder="Message"
+              value={formState.message}
+              onChange={handleChange}
+              multiline
+              rows={8}
+              width='100%'
             />
           </div>
-          <Button type="submit" sx={{ marginTop: '22rem' }}>Send</Button>
+          <Button type="submit" className="submit-button">Send</Button>
         </form>
       </CardContent>
     </Card>
   );
 }
-

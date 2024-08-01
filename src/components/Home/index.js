@@ -32,7 +32,7 @@ const Home = () => {
                         <br />
                         <span className={`${letterClass} _13`}>I'</span>
                         <span className={`${letterClass} _14`}>m </span>
-                        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
+                        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={16} />
                         <br />
                         <span style={{ display: 'inline-flex', alignItems: 'center' }}>
                             <Typewriter
@@ -45,7 +45,7 @@ const Home = () => {
                                 deleteSpeed={100} // Adjust delete speed as needed
                                 multiTextLoop
                             />
-                            <span style={{ color: '#ffffff', fontSize: '1.1em', marginLeft: '0.2em' }}>developer</span>
+                            <span className="developer-text" style={{ color: '#ffffff', fontSize: '1.1em', marginLeft: '0.2em' }}>developer</span>
                         </span>
                     </h1>
                     <h2> Computer Engineer </h2>
@@ -54,7 +54,7 @@ const Home = () => {
                         <a href="https://github.com/wanderman12345">
                             <FontAwesomeIcon icon={faGithub} color='#ffd700' />
                         </a>
-                        <a href="https://linkedin.com/in/wanderman12345">
+                        <a href="https://www.linkedin.com/in/mathew-raju-6b4517171/">
                             <FontAwesomeIcon icon={faLinkedin} color='#ffd700' />
                         </a>
                     </div>

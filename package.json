@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://github.com/wanderman12345/react-portfolio",
+  "homepage": "https://wanderman12345.github.io/personal-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -32,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -57,5 +59,4 @@
     "dotenv": "^16.4.5",
     "gh-pages": "^6.1.1"
   }
-
 }

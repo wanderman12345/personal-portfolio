@@ -1,0 +1,131 @@
+// /* General styles */
+// .card-container {
+//     margin: 0 auto;
+//     padding: 10px; /* Add padding for better spacing */
+//   }
+
+//   /* Card Styles */
+//   .card {
+//     width: 90%;
+//     max-width: 500px; /* Max width to keep the card from being too wide */
+//     height: auto; /* Adjust height to fit content */
+//     margin: 0 auto;
+//     text-align: center;
+//     background-color: #F5F5DC;
+//     border-color: #4d4d4e;
+//     border-radius: 10px; /* Rounded corners for a better look */
+//   }
+
+//   /* Form Styles */
+//   input,
+//   textarea {
+//     width: calc(100% - 20px); /* Adjust width to fit within the card */
+//     margin: 10px 0;
+//   }
+
+//   /* Button Styles */
+//   button {
+//     margin: 20px 0; /* Add margin for spacing */
+//   }
+
+//   /* Media Queries */
+//   @media (max-width: 480px) { /* Target smaller screens */
+//     .card {
+//       width: 100%;
+//       padding: 10px;
+//       box-sizing: border-box;
+//     }
+
+//     .card-content {
+//       padding: 0 10px;
+//     }
+
+//     .input-container {
+//       margin: 10px 0;
+//     }
+
+//     button {
+//       width: 100%;
+//     }
+//   }
+
+.card {
+    width: 900px;
+    height: 600px; /* Adjust height to accommodate message field */
+    margin-left: 20%;
+    margin-top: 6%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: beige;
+    background-color:rgb(245, 245, 220) !important;
+    border-color: #21213d;
+  }
+
+  @media(max-width: 780px){
+    .card{
+      top: 100px;
+      left: -28px;
+      width: 70%;
+      height: 60%;
+    }
+
+    .card-title{
+      font-size: 21px !important;
+    }
+  }
+
+  .card-title {
+    font-style: italic;
+    font-size: 4rem;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container {
+    margin-top: 1rem; /* Adjust spacing as needed */
+    width: 100%;
+  }
+    @media(min-width: 780px){
+      .card-title{
+        font-size: 41px !important;
+      }
+    .input-container:first-child {
+      margin-left: -50rem; /* Move the first input to the left */
+      margin-top: 3rem;
+    }
+    .input-container:nth-child(2) {
+      margin-left: 145%; /* Move the first input to the left */
+      margin-top: -6.5rem;
+    }
+    .input-container:nth-child(3) {
+      width: 200%;
+      height: 290%;
+
+    }
+
+  }
+
+  .input-name {
+    margin-left: -15%;
+    height: 200px;
+  }
+
+  .input-email {
+    margin-left: 80%;
+  }
+
+  .input-message {
+    width: 280px; /* Adjust width as needed */
+  }
+
+  .submit-button {
+    margin-top: 22rem; /* Adjust spacing as needed */
+  }

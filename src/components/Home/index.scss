@@ -5,8 +5,21 @@
         top: 50%;
         transition: translateY(-50%);
         width: 40%;
+        display: inline-block;
 
     }
+
+    @media (max-width: 480px) { /* Adjust for very small screens */
+        .text-zone h1 {
+          font-size: 3rem;
+          width: 200%;
+        display: inline-block;
+        }
+    }
+
+
+
+
     h1 {
         color: #fff;
         font-size: 53px;
@@ -77,6 +90,21 @@
 
 
     }
+    @media (max-width: 480px) { /* Adjust for very small screens */
+        .buttons  {
+            position: relative;
+            left: 60%;
+            margin-top: 50%;
+            gap: 4rem; /* Adjust the space between buttons */
+
+        }
+        .flat-button {
+            position: relative;
+            left: 50%;
+            margin-top: 1rem;
+            transform: translateX(-50%);
+        }
+    }
 
     .flat-button {
         color: #ffd700;
@@ -115,6 +143,15 @@
         background-clip: padding-box;
 
       }
+
+      @media (max-width: 480px) { /* Adjust for very small screens */
+        .profile-section img  {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px; /* Adjust the size as needed */
+            position: relative;
+            right: 35%;
+        }
+    }
 
       @keyframes float {
         0% {
