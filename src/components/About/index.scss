@@ -45,6 +45,32 @@
       }
 
 }
+@media (max-width: 480px) { /* Adjust for very small screens */
+    .Timeline {
+        .vertical-timeline-element-content.bounce-in{
+            width: 200% !important;
+        }
+        h2{
+            margin-top: 80%;
+            position: relative;
+            right: 70%;
+            width: 180%;
+        }
+        .start{
+            position: relative;
+            right: 120px;
+        }
+
+        p {
+            width: 130%;
+        }
+        h3{
+            font-size: 20px !important;
+            width: 120% !important;
+        }
+     width: 65%;
+    }
+}
 
 
 .Timeline{
